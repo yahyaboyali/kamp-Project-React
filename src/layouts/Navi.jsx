@@ -18,7 +18,7 @@ export default function Navi() {
                         
                     </Nav>
                     <CartSummary />
-                    <Button variant="success">Search</Button>
+                    <Button variant="primary">Sign Up</Button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

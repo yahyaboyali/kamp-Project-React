@@ -15,8 +15,11 @@ export default function ProductList() {
     productService.getProcuct().then
     (result=>setProducts(result.data.data)
     )
-  })
-
+  },[])
+// boş arrayi sürekli istek atmaması için yazdık
+// use effect ile verilere erişimi sağladık
+//değişim durumlarında kullanılan yeri renderlıyor
+// sayfa yüklenince bunu çalıştırıyor
   return (
     <div>
       <Table striped bordered hover>
